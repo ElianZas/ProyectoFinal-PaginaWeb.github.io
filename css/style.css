@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+
+body{
+    width: 100%;
+    background-color: pink;
+}
+
+img.Home{
+    width:600px;
+}
