@@ -1,14 +1,101 @@
 *{
-    margin:0;
-    padding:0;
+	margin: 0;
+	padding: 0;
     box-sizing: 0;
 }
-
 body{
-    width: 100%;
-    background-color: pink;
+    background-color: rgb(178, 222, 240);
+}
+.container-fluid{
+    display:grid;
+    grid-template-columns: 200px 200px 300px;
+    grid-template-rows: 80px;
+    padding:0;
+    background-color: black;
+    align-items: stretch
+}
+header.row{
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+}
+.col.encabezadoLogo img{
+    width:60px;
+}
+.col.encabezadoNombre h1{
+    width: auto;
+    color:white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+@media (min-width:300px){
+    .container-fluid{
+        display:grid;
+        grid-template-columns: 200px 200px 300px;
+        grid-template-rows: 80px;
+        padding:0;
+        background-color: black;
+        align-items: stretch
+    }
+    header.row{
+        flex-direction: row;
+        align-items: center;
+        margin-right: auto;
+    }
+    .col.encabezadoLogo img{
+        width:60px;
+    }
+    .col.encabezadoNombre h1{
+        width: auto;
+        color:white;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    @media (min-width: 768px){
+        .container-fluid{
+            background-color: black;
+        }
+        header.row{
+            margin-left: 5px;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        }
+        .col.encabezadoLogo img{
+            width:50px;
+        }
+        .col.encabezadoNombre h1{
+            color:pink;
+            font-size: 15px;
+        }
 }
 
-img.Home{
-    width:600px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.container-fluid{
+    height:100px;
+    background-color: black;
 }
+
+
+h1{
+    color:white;
+    font-size: 30px;
+}
+img.HomeLogo{
+    width:80px;
+} */
+
