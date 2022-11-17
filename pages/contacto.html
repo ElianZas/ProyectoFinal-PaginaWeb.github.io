@@ -54,35 +54,54 @@
             </nav>
         </header>
     </section>
-        <main id="quienSoy">
-            <div class="subtitulo">
-                <h3>¿Quién soy?</h3>
-            </div>
-            <div id="descripcion">
-                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta molestiae ullam, earum et aliquid laboriosam consequatur doloremque cum dolorem, minima alias maxime expedita sapiente necessitatibus eligendi ducimus ut iste!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta molestiae ullam, earum et aliquid laboriosam consequatur doloremque cum dolorem, minima alias maxime expedita sapiente necessitatibus eligendi ducimus ut iste!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta molestiae ullam, earum et aliquid laboriosam consequatur doloremque cum dolorem, minima alias maxime expedita sapiente necessitatibus eligendi ducimus ut iste!</p>
-            </div>
-        </main>
-        <section>
-            <div id="contenedorImg">
-                <article class="fondo">
-                </article>
-            </div>
-        </section>
-        <section>
-            <table id="logosHerramientas"> 
-                <thead>
-                    <tr>
-                        <li><img   class="ph" src="./imagenes/photoshop.png" /></li>
-                    </tr>
-                    <tr>
-                        <li><img   class="lr" src="./imagenes/lightroom.png" /></li>
-                    </tr>
-                </thead>
-            </table>
-        </section>
+            <article>
+                <div id="contactoInfo">
+                    <ol>
+                        <li >elianzas905@gmail.com</li>
+                        <li >+54911celular<li>
+                    </ol>
+                </div>
+            </article>
+                <section id="formulario">
+                    <div id="contenedorFormulario">
+                        <form class="formulario" action="/formulario" method="POST">
+                            <ol>
+                                    <li class=nombre><label for="nombre">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="nombre"/></li>
+                                    <li><label for="apellido">Apellido:</label>
+                                    <input type="text" id="apellido" name="apellido" placeholder="apellido"></li>
+                                    <li class="file"><label for="adjuntar">Adjuntar</label>
+                                    <input type="file"/></li>
+                                    <label class="oficio" for="">¿Sos modelo, productora o fotógraf@?</label>
+                                    <select name="oficio" id="oficio">
+                                        <option value="mod" >Modelo</option>
+                                        <option value="prod" >Productora</option>
+                                        <option value="fotog" >Fotógraf@</option>
+                                        <option value="ninguna" >Ninguna de las anteriores</option>
+                                    </select>
+                                    <li  class="mail"><label for="email">Email:<span></span></label>
+                                    <input type="email"/></li>
+                                    <li>¿Desea recibir novedades?
+                                        <input type="checkbox"/></li>
+                            </ol> 
+                                <div id="opcionesConsulta"><strong>Servicio a consultar:</strong></div>
+                                    <div>
+                                        <input type="radio" name="Curso" >Fotografía
+                                        <input type="radio" name="Curso" > Retoque
+                                        <input type="radio" name="Curso" >  Otro
+                                    </div>
+                                <div id="comentario">
+                                    <label for="comentario"><span>Comentario</span></label>
+                                    <textarea cols="60" rows="10" id="comentario" placeholder="comentario" name="comentario"></textarea>
+                                    <input type="submit" />
+                                    <button type="reset">Reset</button>
+                                </div>
+                        </form>
+                    </div>
+                </section>
     </div>
     <footer id="footer">
-            <p>&copy; 2022</p>
+        <p>&copy; 2022</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
