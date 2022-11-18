@@ -111,9 +111,6 @@ html{
         background-color: #262c37;
         letter-spacing: 2px;
     }
-    img{
-        background-color: #262c37;
-    }
     .card{
         overflow: hidden;
         color:white;
@@ -252,45 +249,36 @@ html{
 
         /*Formulario Contacto*/
         body{
-            background-color: #181818;
+            background-color: #04192c;
         }
-        aside.contenido{
-            background-color: #181818;
+        main.contenido{
             font-family: 'Niramit', sans-serif;
             color:#fff;
-            padding:0 1.5em;
+            padding:0 2%;
             max-width: 1170px;
             margin-left: auto;
             margin-right: auto;
-            padding:1.5em;
         }
-        aside.contenido h3{
+        main.contenido h3{
             text-align: center;
             font-size: 3em;
+
         }
         .contenido h3 span{
             color:#0eb784;
         }
         .contacto-contenedor{
-            box-shadow: 0 0 20px 0 rgba(35, 77, 214, 0.3);
+            box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
         }
         .contacto-contenedor >*{
             padding: 1em;
         }
-        .formulario-Contacto{
-            background-color: #061314;
-        }
         .formulario-info{
             background-color: black; 
-        }
-        .formulario-Contacto form{
-            margin:0;
-            padding:1em;
         }
         .formulario-Contacto form button, 
         .formulario-Contacto form input,
         .formulario-Contacto form textarea{
-            width:100%;
             padding: 2%;
             border:none;
             outline: none;
@@ -298,12 +286,81 @@ html{
             border-bottom: 1px solid #0eb784;
             background:none;
         }
+        .formulario-Contacto form input{
+            width:100%;
+        }
+        .formulario-Contacto form p.novedades input{
+            width:10%;
+        }
+        .formulario-Contacto form p.consultas input{
+            width:3%;
+        }
+        .formulario-Contacto form p label{
+            padding:3px;
+        }
+        .formulario-Contacto form{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .formulario-Contacto form .block{
+            grid-column: 1/3
+        }
+        .formulario-Contacto form p label{
+            width:100%;
+        }
+        .formulario-Contacto form p textarea{
+            width:100%;
+        }
+        .block{
+            text-align: center;
+        }
+        .formulario-Contacto form button{
+            color:black;
+            border-radius: 10px;
+            background-color:#4f719b;
+            border:0;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding:4%;
+        }
+        .formulario-Contacto form button:hover, 
+        .formulario-Contacto form button:focus{
+            background-color: #4173af59;
+            color: white;
+            transition: background-color 0.5s ease-out;
+            outline:0;
+        }
+        .formulario-info h4, 
+        .formulario-info ul,
+        .formulario-info p{
+            text-align: justify;
+            margin:0 0 1rem 0;
+        }
+        .formulario-info ul{
+            text-align: justify;
+            letter-spacing:5px;
+            list-style: none;
+            padding:0;
+        }
+        .formulario-info ul{
+            padding: 2%;
+        }
+        .formulario-info iframe{
+            width:100%;
+        }
+        .contacto-contenedor{
+            margin-bottom: 20px;
+        }
+        .formulario-info h6{
+            text-align: center;
+        }
 
 }
 
-
-
 footer{
+    background-color:#262c37;
+    color:white;
     text-align: center;
 }
 
@@ -319,6 +376,7 @@ footer{
     .col.logoLogo img{
         padding-bottom: 2px;
         width:45px;
+        background-color: none;
     }
     .col.logoNombre h2{
         padding-top: 0;
@@ -458,6 +516,133 @@ footer{
         margin-top: 150px;
     }
 
+    /*Contacto*/
+    .formulario-Contacto form button, 
+    .formulario-Contacto form input,
+    .formulario-Contacto form textarea{
+        width:50%;
+        border:none;
+        outline: none;
+        color:#fff;
+        border-bottom: 1px solid #0eb784;
+        background:none;
+    }
+    .formulario-Contacto form{
+        padding:30px;
+        width:100%;
+        display:grid;
+        grid-template-areas: 
+        "nombre consultas"
+        "email consultas"
+        "asunto oficio"
+        "nove nove"
+        "mensaje mensaje";
+    }
+    .formulario-Contacto form p input{
+        width: 100%;
+    }
+    .formulario-Contacto form p.novedades label{
+        margin-top: 50px;
+        width:60%;
+    }
+    .formulario-Contacto form p.consultas label{
+        margin-top: 60px;
+        width:80%;
+        text-align: start;
+    }
+    .formulario-Contacto form p.email{
+        grid-area: email;
+    }
+    .formulario-Contacto form p.nombre{
 
+        grid-area: nombre;
+    }
+    .formulario-Contacto form p.tel{
 
+        grid-area: tel;
+    }
+    .formulario-Contacto form p.asunto{
+        grid-area: asunto;
+    }
+    .formulario-Contacto form p.oficio{
+        grid-area: oficio;
+    }
+    .formulario-Contacto form p.novedades{
+        grid-area: nove;
+    }
+    .formulario-Contacto form p.consultas{
+        grid-area: consultas;
+    }
+    .formulario-Contacto form p label{
+        width:100%;
+    }
+    .formulario-Contacto form p textarea{
+        width:100%;
+    }
+    .block{
+        text-align: center;
+    }
+    .contacto-contenedor{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
 }
+
+
+/*Servicios*/
+body.servicios{
+    background-color: #000000;
+}
+main.container-Servicios{
+    background-color: #ffffff31;
+}
+.container-Servicios h4{
+    font-size: 50px;
+    color:rgba(255, 255, 255, 0.521);
+}
+.herramientas h5{
+    color:black;
+    font-weight: bold;
+}
+section.herramientas{
+    display:grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    background-color: #000000;
+    padding-bottom:30px ;
+}
+.iconos img{
+    width: 80px;
+}
+main.container-fluid-Servicios{
+    width:100%;
+}
+.galeria-Servicios{
+    justify-content: center;
+    display:grid;
+    grid-template-columns:50% 40%;
+    gap:1rem;
+    padding-bottom: 20px;
+}
+article .card-img{
+    justify-content: center;
+    justify-items: center;
+}
+.galeria-Servicios article.card img{
+    width: 100%;
+}
+div.card-img.camara img{
+    margin:30px;
+    width:20%;
+}
+.card-img.camara{
+    padding:20px;
+    text-align: center;
+}
+
+
+
+
+
+/*Promos*/
