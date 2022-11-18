@@ -242,46 +242,6 @@ html{
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
     }
-    /*PORTFOLIO*/
-    .galeria.container-fluid{
-        display:grid;
-        grid-template-areas: 
-        "dos dos dos"
-        "uno uno uno";
-    }
-    .secundarias{
-        display:flex;
-        justify-content: space-between;
-        gap:5px;
-        padding-bottom: 5px;
-        padding-top: 20px;
-    }
-    .Portfolio{
-        background-color: #262c37;
-    }
-    h4.tituloUno{
-        margin-top: 20px;
-        padding-bottom: 0px;
-        font-size: 30px;
-        background-color:#010102;
-    }
-    h4.tituloUno span{
-        color:white;
-    }
-    .galeria.container-fluid img:hover{
-        border:5px solid #f7f7f7;
-    }
-    img.Uno{
-        width:100%;
-        grid-area: uno;
-    }
-    .secundarias img{
-        max-width: 48%;
-        grid-area: secundarias;
-    }
-    img.Dosdos{
-        display:none;
-    }
 }
 footer{
     text-align: center;
@@ -430,17 +390,5 @@ footer{
         animation-delay: 0s;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
-    }
-    /*PORTFOLIO*/
-    .galeria.container-fluid{
-        display:flex;
-        flex-direction: column;
-    }
-    .secundarias img{
-        display:flex;
-        width:30%;
-    }
-    img.Dosdos{
-        display:flex;
     }
 }
