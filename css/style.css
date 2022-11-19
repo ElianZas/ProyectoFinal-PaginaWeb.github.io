@@ -5,13 +5,13 @@
 }
 
 /*INDEX oculta card desktop en mobile*/
-@media (max-width: 1024px){
+@media (max-width: 992px){
     section.card.Desktop{
         display:none;
     }
 }
 
-@media (min-width: 200px){
+@media (min-width:300px){
     /*MOBILE FIRST*/
     #container{
         background-color: #2894ff;
@@ -533,7 +533,7 @@
 }
 
 /*VISTA_DESKTOP*/
-@media (min-width: 1026px){
+@media (min-width: 992px){
     div.row.logo{
         padding-left: 40px;
         display:flex;
