@@ -1,0 +1,24 @@
+$bg-colores: (
+    fondoIndex:  #262c37,
+    fondoContacto:  #4e75bc,
+);
+@each $nombre, $valor in $bg-colores{
+    .bg-color#{$nombre}{
+        background-color:$valor;
+    }
+}
+
+$font-size: (
+    textospequenos:1rem,
+    textosmedianos:1.2rem,
+    textosgrandes:1.5rem,
+    titulos:2rem,
+    titulosgrandes:2.5rem,
+    titulosextragrandes:4rem,
+);
+@each $nombre, $valor in $font-size{
+    .tamaño#{$nombre}{
+        font-size:$valor;
+    }
+}
+ 

@@ -1,0 +1,49 @@
+.header{
+    & &__Navbar{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    & &__barraNav{
+        padding:$paddingreset;
+    }
+    & &__Logo{
+        img{
+            width:45px;
+        }
+    }
+    & &__LogoNombre{
+        padding-top: 16px;
+        h2{
+            font-family:$font-family-General;
+            font-size: $textospequenos;
+            color:$color-nav-textoLogo;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position:relative;
+        }
+    }
+    & &__BotonMenu{
+        margin-right: 10px;
+        background-color: $color-nav-botonMenu;
+        border:none;
+        box-shadow: none;
+    }
+    & &__MenuContenedor{
+        text-align: center;
+        padding-top:20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        li a.itemsMenu{
+            position:relative;
+            margin:4px;
+            text-decoration:none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color:$color-nav-botonesTexto;
+            background-color: $color-nav-botonesFondo;
+            border-radius: $border-radius;
+        }
+    }
+}    

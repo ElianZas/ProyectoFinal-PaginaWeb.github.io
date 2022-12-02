@@ -20,57 +20,60 @@
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">  
+    <link rel="stylesheet" href="../css/main.css">  
 </head>
-<body class="Portfolio">
-    <section class="container-fluid contenedorHeader">
-        <header id="header">
-            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-            <div class="container-fluid barraNav">
-                <a class="navbar-brand" href="../index.html"> 
-                    <div class="row logo">
-                        <div class="col logoLogo">
+<body class="bg-colorfondoIndex">
+    <section class="container-fluid">
+        <header class="header">
+            <nav class="header__Navbar navbar navbar-expand-md bg-dark fixed-top">
+            <div class="container-fluid header__barraNav">
+                <a class="navbar-brand header__LogoLink" href="./index.html"> 
+                    <div class="row header__LogoContenedor">
+                        <div class="col header__Logo">
                             <img  src="../icons/LIANPH_LOGO.svg" alt="LogoHome">
                         </div>
-                        <div class="col logoNombre">
+                        <div class="col header__LogoNombre">
                             <h2 data-text="LIANPH..">LIANPH</h2>
                         </div>
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler header__BotonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="../index.html"><span>Inicio</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/portfolio.html"><span>Portfolio</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/servicios.html"><span>Servicios</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/precios&promos.html"><span>Precios&Promos</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html"><span>Contacto</span></a>
-                        </li>
+                <div class="collapse navbar-collapse header__Collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav header__MenuContenedor">
+                    <li class="nav-item active">
+                        <a class="nav-link itemsMenu" aria-current="page" href="../index.html"><span>Inicio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link itemsMenu" href="../pages/portfolio.html"><span>Portfolio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link itemsMenu" href="../pages/servicios.html"><span>Servicios</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link itemsMenu" href="../pages/precios&promos.html"><span>Precios&Promos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link itemsMenu" href="../pages/contacto.html"><span>Contacto</span></a>
+                    </li>
                     </ul>
                 </div>
                 </div>
             </nav>
         </header>
     </section>
-    <section class="galeriaPortfolio">
-        <div class="row m-4">
+    <section class="galeria__Contenedor">
+        <section class="card galeria__Contenedor__Sesion bg-colorfondoIndex">
+            <a href="#"><img></a>
+        </section>
+        <div class="row m-4 galeria__Contenedor__fotos">
             <div class=" col-sm-6 col-lg-4 mb-0 p-2">
                 <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen1">
-                    <img class="w-100 mb-4 rounded" src="../media/Galeria2.jpg" alt="">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria5.jpg" alt="">
                 </a>
                 <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen2">
-                    <img class="w-100 mb-4 rounded" src="../media/Galeria4.jpg" alt="">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria1.jpg" alt="">
                 </a>
             </div>
             <div class=" col-sm-6 col-lg-4   mb-0 p-2">
@@ -78,18 +81,58 @@
                     <img class="w-100 mb-4 rounded" src="../media/Galeria5.jpg" alt="">
                 </a>
                 <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen4">
-                    <img class="w-100 mb-4 rounded" src="../media/Galeria3.jpg" alt="">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria1.jpg" alt="">
                 </a>
             </div>
             <div class=" col-sm-6 col-lg-4   mb-0 p-2">
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen5">
-                    <img class="w-100 mb-4 rounded" src="../media/Galeria1.jpg" alt="">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen3">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria5.jpg" alt="">
                 </a>
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen6">
-                    <img class="w-100 mb-4 rounded" src="../media/Galeria6.jpg" alt="">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen4">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria1.jpg" alt="">
                 </a>
             </div>
         </div>
+        <section class="card galeria__Contenedor__Sesion__2 bg-colorfondoIndex">
+            <a href="#"><img></a>
+        </section>
+        <div class="row m-4 galeria__Contenedor__fotos ">
+            <div class=" col-sm-6 col-lg-4 mb-0 p-2">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen1">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria5.jpg" alt="">
+                </a>
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen2">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria1.jpg" alt="">
+                </a>
+            </div>
+            <div class=" col-sm-6 col-lg-4   mb-0 p-2">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen3">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria5.jpg" alt="">
+                </a>
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen4">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria1.jpg" alt="">
+                </a>
+            </div>
+            <div class=" col-sm-6 col-lg-4 mb-0 p-2">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen1">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria5.jpg" alt="">
+                </a>
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#mImagen2">
+                    <img class="w-100 mb-4 rounded" src="../media/Galeria1.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <aside class="galeria__Contenedor__redes social-media redes">
+            <h1 class="animate__animated animate__jackInTheBox">Si querés ver más entra a mi Behance</h1>
+            <div class="redes__iconos">
+                <a class="redes__iconos__1 animate__animated animate__zoomIn" href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="Behance" viewBox="0 0 16 16">
+                    <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z"/>
+                  </svg>
+                </a>
+            </div>
+        </aside>
+    </section>
+
         <!--Galería modal Boostrap-->
         <!--Imágen 1-->
         <div tabindex="-1" aria-labelledby="mImagen1" aria-hidden="true" class="modal fade" id="mImagen1">
@@ -139,16 +182,12 @@
                 </div>
             </div>
         </div>
-
-        
-    </section>
-    
-	<a href="https://wa.me/+541138587040" class="whatsapp" target="_blank"> 
+	<a href="https://wa.me/+541138587040" class="whatsappFlotante" target="_blank"> 
         <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
             <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
         </svg>
     </a>
-    <footer>&copy;2022 Elian Herrera | Todos los derechos reservados</footer>
+    <footer class="footer__Portfolio">&copy;2022 Elian Herrera | Todos los derechos reservados</footer>
 
     <!--SCRIPTS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

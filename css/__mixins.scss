@@ -1,0 +1,45 @@
+@mixin footer-settings($margin-top,$text-align, $color, $padding-bottom){
+    margin-top:$margin-top;
+    text-align: $text-align;
+    color:$color;
+    padding-bottom:$padding-bottom;
+}
+@mixin index-textoPrincipal{
+    text-align: justify;
+    letter-spacing: 1.5px;
+    color:white;
+    text-align: end;
+}
+@mixin index-textoP{
+    letter-spacing: 1.5px;
+    color:white;
+    text-align: end;
+}
+
+ @mixin redes-sociales{
+    animation-delay: 0.8s;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation: iconosAnimation;
+    animation-iteration-count: infinite;
+    @keyframes iconosAnimation {
+        0%{
+            transform: scale(100%);
+        }
+        50%{
+            transform: scale(97%);
+        }
+        100%{
+            transform: scale(100%);
+        }
+    }    
+ }
+ 
+@mixin sesion-bg($background-image){
+    background-image:$background-image;
+}
+
+@mixin redes($padding-top, $padding-bottom){
+    padding-top:$padding-top;
+    padding-bottom:$padding-bottom;
+}
