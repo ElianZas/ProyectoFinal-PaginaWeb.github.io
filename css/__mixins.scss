@@ -4,6 +4,12 @@
     color:$color;
     padding-bottom:$padding-bottom;
 }
+
+@mixin precios-promos($display,$font-size){
+    display:$display;
+    font-size:$font-size;
+}
+
 @mixin index-textoPrincipal{
     text-align: justify;
     letter-spacing: 1.5px;

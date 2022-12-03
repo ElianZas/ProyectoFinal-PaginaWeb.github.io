@@ -1,1 +1,10 @@
-
+$promos-bg: (
+        promo1: #3ea1ecc1,
+        promo2: #3e64eca3,
+        promo3: #6f3eec9b,
+); 
+@each $bg-promos, $promo in $promos-bg{
+    .bg-promos--#{$bg-promos} {
+        background-color: $promo;
+    }
+ }
