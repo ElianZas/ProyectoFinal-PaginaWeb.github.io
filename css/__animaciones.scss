@@ -1,0 +1,55 @@
+@import '__vars';
+/*Animaciones*/
+.header{
+    & &__LogoNombre{
+        h2::before{
+            content: attr(data-text);
+            margin-top:0px;
+            position: absolute;
+            top:0;
+            left: 0;
+            width:0%;
+            height: 100%;
+            color:rgba(255, 255, 255, 0.603);
+            -webkit-text-stroke: 0vw rgb(0, 0, 0);
+            border-right:2px solid rgb(0, 0, 0);
+            overflow:hidden;
+            animation: animate 6s linear infinite;
+        }
+        @keyframes animate{
+            0%, 10%, 100%
+            {
+                width:0;
+            }
+            70%, 90%
+            {
+                width:100%;
+            }
+        }
+    }
+    & &__MenuContenedor{
+        a.nav-link:hover{
+            animation: fondonav;
+            animation-delay: 0s;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes fondonav {
+            0%{
+                color:$color-blanco;
+                transform: rotateZ(1deg);
+                background-color: $bg-fondo-Mobile;
+            }
+            50%{
+                color:$color-blanco;
+                transform: rotateZ(-1deg);
+            }
+            100%{
+                color:$color-blanco;
+                transform: rotateZ(1deg);
+                background-color: $bg-fondo-Mobile;
+            }
+        }
+    }
+}
