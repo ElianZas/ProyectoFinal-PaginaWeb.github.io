@@ -118,6 +118,18 @@
   font-size: 4rem;
 }
 
+.bg-promos--promo1 {
+  background-color: rgba(62, 161, 236, 0.7568627451);
+}
+
+.bg-promos--promo2 {
+  background-color: rgba(62, 100, 236, 0.6392156863);
+}
+
+.bg-promos--promo3 {
+  background-color: rgba(111, 62, 236, 0.6078431373);
+}
+
 .header .header__Navbar {
   display: flex;
   flex-direction: row;
@@ -312,6 +324,18 @@
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+}
+
+.bg-promos--promo1 {
+  background-color: rgba(62, 161, 236, 0.7568627451);
+}
+
+.bg-promos--promo2 {
+  background-color: rgba(62, 100, 236, 0.6392156863);
+}
+
+.bg-promos--promo3 {
+  background-color: rgba(111, 62, 236, 0.6078431373);
 }
 
 .card-Desktop {
@@ -512,7 +536,6 @@
   padding-bottom: 10px;
   background-color: rgba(16, 67, 94, 0.6117647059);
   padding-top: 10px;
-  font-weight: bold;
 }
 
 .contacto .contacto__contenido {
@@ -741,7 +764,7 @@
   padding: 2px;
   text-align: center;
 }
-.contacto__Info p {
+.contacto__Info h1 {
   text-align: justify;
   letter-spacing: 5px;
 }
@@ -760,7 +783,6 @@
   padding-bottom: 10px;
   background-color: rgba(16, 67, 94, 0.6117647059);
   padding-top: 10px;
-  font-weight: bold;
 }
 
 .galeria__Contenedor {
@@ -795,7 +817,141 @@
   padding-bottom: 10px;
   background-color: rgba(16, 67, 94, 0.6117647059);
   padding-top: 10px;
+}
+
+.galeria {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 100px auto auto;
+  justify-content: center;
+  align-items: center;
+}
+.galeria .galeria__Subtitulos {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Acme", sans-serif;
+  margin-bottom: 20px;
+}
+.galeria .galeria__Servicios {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.galeria .galeria__Servicios__Retoque img {
+  border-radius: 10px;
+}
+.galeria .galeria__Servicios__Retoque__2 {
+  margin-top: 50px;
+}
+.galeria .galeria__Servicios__Retoque__2 img {
+  border-radius: 10px;
+}
+.galeria .galeria__Herramientas {
+  margin-top: 60px;
+  background-color: rgba(127, 120, 221, 0.3607843137);
+  padding-bottom: 20px;
+}
+.galeria .galeria__Herramientas div {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.galeria .galeria__Herramientas div h4 {
+  height: 100px;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+.galeria h1, .galeria h3, .galeria h4 {
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+.galeria h1 span, .galeria h3 span, .galeria h4 span {
+  color: #3cd0ba;
+}
+.galeria h3 {
+  font-size: 3rem;
+}
+
+.footer__Servicios {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  background-color: rgba(16, 67, 94, 0.6117647059);
+  padding-top: 10px;
+}
+
+.PromosTitulo {
+  margin-top: 180px;
+  text-align: center;
+  color: white;
+}
+
+#Promos {
+  gap: 50px;
+  width: 90%;
+  margin-left: 4%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  grid-auto-rows: 25rem;
+}
+
+.Promos__Contenedor {
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(44, 144, 206, 0.1960784314);
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+}
+.Promos__Contenedor h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border-radius: 50px;
+  font-family: "Acme", sans-serif;
+  letter-spacing: 10px;
+}
+.Promos__Contenedor ul {
+  text-align: center;
+  list-style-type: none;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 0px;
+}
+.Promos__Contenedor__Precios span {
+  display: block;
+  font-size: 30px;
+}
+.Promos__Contenedor__botonContacto {
+  padding-top: 40px;
+}
+.Promos__Contenedor__botonContacto button {
+  width: 200px;
+  text-decoration: none;
+  border-radius: none;
+  border-style: none;
+  font-size: 25px;
+  border-radius: 5px;
+}
+.Promos__Contenedor__botonContacto button a {
   font-weight: bold;
+  color: white;
+}
+
+.footer__Precios {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  background-color: rgba(16, 67, 94, 0.6117647059);
+  padding-top: 10px;
 }
 
 @media (min-width: 1200px) {
@@ -995,5 +1151,52 @@
   }
   .galeria__Contenedor .galeria__Contenedor__fotos {
     justify-content: space-between;
+  }
+  .galeria {
+    display: flex;
+    width: 100%;
+  }
+  .galeria .galeria__Servicios {
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-start;
+  }
+  .galeria .galeria__Subtitulos {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 100%;
+  }
+  .galeria .galeria__Servicios__Retoque {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 400px;
+  }
+  .galeria .galeria__Servicios__Retoque img {
+    margin-left: 140px;
+  }
+  .galeria .galeria__Servicios__Retoque__2 {
+    padding-top: 25%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 400px;
+  }
+  .galeria .galeria__Servicios__Retoque__2 img {
+    margin-left: 80px;
+  }
+  .galeria .galeria__Herramientas {
+    grid-column: 1/3;
+    grid-row: 3/3;
+  }
+  .galeria .galeria__Herramientas div {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #Promos {
+    margin-top: 20px;
+    gap: 80px;
+    margin-bottom: 100px;
   }
 }/*# sourceMappingURL=main.css.map */
