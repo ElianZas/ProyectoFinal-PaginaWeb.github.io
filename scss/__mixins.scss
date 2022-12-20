@@ -10,6 +10,17 @@
     font-size:$font-size;
     color:$color;
 }
+@mixin letterspacing($letter-spacing){
+    letter-spacing: $letter-spacing;
+}
+
+@mixin padding-top($padding-top){
+    padding-top:$padding-top;
+}
+
+@mixin margin-top($margin-top){
+    margin-top:$margin-top;
+}
 
 @mixin index-textoPrincipal{
     text-align: justify;

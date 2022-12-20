@@ -4,6 +4,20 @@
 /*Fuentes Var*/
 /*FondosColoresVar*/
 /*Bordes Var*/
+.whatsappFlotante {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.5254901961);
+  color: #3cd0ba;
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+}
+.whatsappFlotante svg:hover {
+  color: white;
+}
+
 /*MedidasQuerie Var*/ /*Header Var*/
 /*TamañoFuente Var*/
 /*Fuentes Var*/
@@ -541,20 +555,6 @@
   display: none;
 }
 
-.whatsappFlotante {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  background-color: rgba(0, 0, 0, 0.5254901961);
-  color: #3cd0ba;
-  border-radius: 50px;
-  text-align: center;
-  align-items: center;
-}
-.whatsappFlotante svg:hover {
-  color: white;
-}
-
 .redes {
   width: 100%;
   height: 150px;
@@ -787,7 +787,6 @@
   color: white;
   padding-bottom: 10px;
   background-color: rgba(16, 67, 94, 0.6117647059);
-  padding-top: 10px;
 }
 
 .galeria__Contenedor {
@@ -831,39 +830,29 @@
   flex-direction: column;
   margin-bottom: 20px;
 }
-.galeria .galeria__Subtitulos h3 {
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-  font-family: "Acme", sans-serif;
-  letter-spacing: 2px;
-}
 .galeria .galeria__Subtitulos h1 {
   text-align: center;
   color: white;
+  letter-spacing: 2px;
+}
+.galeria .galeria__Subtitulos h3 {
+  text-align: center;
+  color: white;
+  font-family: "Acme", sans-serif;
+}
+.galeria .galeria__Subtitulos h4 {
+  color: #3cd0ba;
+  font-family: "Acme", sans-serif;
 }
 .galeria .galeria__Servicios__Retoque {
   display: flex;
   flex-direction: column;
+  gap: 100px;
 }
 .galeria .galeria__Servicios__Retoque img {
   border-radius: 10px;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-.galeria .galeria__Servicios__Retoque__2 {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-}
-.galeria .galeria__Servicios__Retoque__2 img {
-  border-radius: 10px;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-timing-function: ease-in-out;
@@ -1244,49 +1233,22 @@
     justify-content: space-between;
   }
   .galeria .galeria__Servicios {
-    width: 100%;
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: flex-start;
+    flex-direction: row;
   }
   .galeria .galeria__Subtitulos {
-    margin-top: 5px;
-    grid-column: 1/3;
-    grid-row: 1/3;
-    width: 100%;
+    margin-top: 105px;
   }
-  .galeria .galeria__Subtitulos h3 {
+  .galeria .galeria__Subtitulos h3, .galeria .galeria__Subtitulos h4 {
     font-size: 4rem;
   }
-  .galeria .galeria__Subtitulos h1 {
-    font-size: 1.5rem;
-  }
   .galeria .galeria__Servicios__Retoque {
+    margin-top: 50px;
+    margin-bottom: 100px;
     display: grid;
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-  .galeria .galeria__Servicios__Retoque img {
-    margin-left: 140px;
+    justify-content: center;
   }
   .galeria .galeria__Servicios__Retoque__2 {
-    display: grid;
-    padding-top: 25%;
     grid-column: 2/3;
-    grid-row: 1/3;
-  }
-  .galeria .galeria__Servicios__Retoque__2 img {
-    margin-left: 80px;
-  }
-  .galeria .galeria__Herramientas {
-    grid-column: 1/3;
-    grid-row: 3/3;
-  }
-  .galeria .galeria__Herramientas div {
-    height: 100px;
-    display: flex;
-    justify-content: space-evenly;
   }
   .PromosTitulo {
     margin-top: 100px;

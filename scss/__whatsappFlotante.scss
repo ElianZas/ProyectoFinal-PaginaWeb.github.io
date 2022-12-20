@@ -1,0 +1,13 @@
+.whatsappFlotante{
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    background-color:$color-whatsapp-background;
+    color:#3cd0ba;
+    border-radius:50px;
+    text-align:center;
+    align-items: center;
+    svg:hover{
+        color:$color-blanco;
+    }
+}
