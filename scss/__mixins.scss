@@ -5,9 +5,10 @@
     padding-bottom:$padding-bottom;
 }
 
-@mixin precios-promos($display,$font-size){
+@mixin precios-promos($display,$font-size, $color){
     display:$display;
     font-size:$font-size;
+    color:$color;
 }
 
 @mixin index-textoPrincipal{

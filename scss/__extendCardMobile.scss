@@ -1,0 +1,129 @@
+.card-Mobile{
+    padding-top: 35px;
+    border:none;
+    display:block;
+    width:100%;
+    overflow: hidden;
+    & &.carousel-inner{
+        opacity:0.7;
+    }
+    & &__contenedorTexto{
+        margin: 400px 20px;
+        height:90px;
+        display: flex;
+        flex-direction: column;
+        padding:5px;
+        background-color: #2826416e;
+        h1{
+            @include index-textoPrincipal;
+        }
+        p{
+            @include index-textoPrincipal;
+        }
+    }
+}
+.card-About__Me{
+    img{
+        width:150px;
+        height:150px;
+        background-image: url("../media/IMG_5131.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        animation:girainfo;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+.card-About{
+    padding-top:20px;
+    border:none;
+    border-style: none;
+    padding-bottom: 10px;
+    & &__Me{ 
+        display: grid;
+        grid-template-columns: 90%;
+        grid-row: 200px 100px 400px;
+        justify-content: center;
+        justify-items: center;
+        img{
+            @extend .card-About__Me;
+            @keyframes girainfo {
+                0%{
+                    transform: rotateZ(20deg);
+                }
+                50%{
+                    transform: rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateZ(20deg);
+                }
+            }
+        }
+        h2{
+            @include index-textoPrincipal;
+        }
+        p{
+            text-align: justify;
+            color:$color-blanco;
+            font-size: $textosmedianos;
+        }
+        h3{
+            font-size: $textosgrandes;
+            color:$color-blanco;
+        }
+    }
+}
+.card-About__Me{
+    h2{
+        font-family: $font-family-titulos;
+        font-weight: bold;
+        padding:25px 0px 15px;
+        color:$color-blanco;
+        text-align: center;
+        span{
+            color:$color-resalta;
+        }
+    }
+}
+.card-About{
+    padding-top:20px;
+    border:none;
+    border-style: none;
+    padding-bottom: 10px;
+    & &__Me{ 
+        display: grid;
+        grid-template-columns: 90%;
+        grid-row: 200px 100px 400px;
+        justify-content: center;
+        justify-items: center;
+        img{
+            @extend .card-About__Me;
+            @keyframes girainfo {
+                0%{
+                    transform: rotateZ(20deg);
+                }
+                50%{
+                    transform: rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateZ(20deg);
+                }
+            }
+        }
+        h2{
+            @include index-textoPrincipal;
+        }
+        p{
+            text-align: justify;
+            color:$color-blanco;
+            font-size: $textosmedianos;
+        }
+        h3{
+            font-size: $textosgrandes;
+            color:$color-blanco;
+        }
+    }
+}
+

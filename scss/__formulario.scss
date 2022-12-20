@@ -1,0 +1,115 @@
+.contacto{
+    & &__formulario{
+        font-family: $font-family-General;
+        font-size: $textospequenos2;
+        border-top-left-radius: $border-radius*2;
+        border-top-right-radius: $border-radius*2;
+        animation: formTransi;
+        animation-delay: 1s;
+        animation-duration: 3s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        @keyframes formTransi{
+            0%{
+                background-color: $color-nav-bloque;
+            }
+            50%{
+                background-color: $color-fondoform-background;
+            }
+            100%{
+                background-color:$color-nav-bloque;
+            }
+            50%{
+                background-color: $color-fondoform-background;
+            }
+            0%{
+                background-color: $color-nav-bloque;
+            }
+        }
+        form p.novedades input{
+            width:10%
+        }
+        form p.consultas input{
+            width:3%;
+        }
+        form p label{
+            padding:3px;
+        }
+        form .botonSubmit{
+            color:black;
+            border-radius: 10px;
+            border:none;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding:4%;
+            font-weight: bold;
+            background-color:$color-nav-botonesFondo;
+            box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
+            animation: contactoanim 1.5s infinite;
+            @keyframes contactoanim {
+                0%
+                {
+                    transform: scale(0.80);
+                    box-shadow: 0 0 0 0 rgba(256,256,256,0.1);
+                }
+                50%
+                {
+                    transform: scale(0.90);
+                    box-shadow: 0 0 0 25px rgba(256,256,256,0.0);
+                }
+                100%
+                {
+                    transform: scale(0.80);
+                    box-shadow: 0 0 0 0 rgba(256,256,256,0);
+                }
+            }
+        }
+        button:hover, button:focus{
+            background-color: $color-nav-botonMenu;
+            color: white;
+            transition: background-color 0.5s ease-out;
+            outline:0;
+        }
+    }
+    & &__formulario form{
+        text-align: center;
+    }
+    & &__formulario form button, 
+    & &__formulario form input,
+    & &__formulario form textarea{
+        width:100%;
+        padding: 2%;
+        border:none;
+        outline: none;
+        color:#fff;
+        border-bottom: 1px solid #0eb784;
+        background:none;
+    }
+    & &__formulario form input:focus{
+        animation: borde;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    & &__formulario  form textarea:focus{
+        animation: borde;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes borde {
+        0%{
+            border-bottom: 1px solid #0eb784;
+        }
+        30%{
+            border-bottom: 1px solid #7f78dd;
+        }
+        60%{
+            border-bottom: 1px solid #a35278;
+        }
+        0%{
+            border-bottom: 1px solid #0eb784;
+        }
+    }
+}
