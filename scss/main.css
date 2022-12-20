@@ -1263,6 +1263,7 @@
     font-size: 1.5rem;
   }
   .galeria .galeria__Servicios__Retoque {
+    display: grid;
     grid-column: 1/3;
     grid-row: 2/3;
   }
@@ -1270,6 +1271,7 @@
     margin-left: 140px;
   }
   .galeria .galeria__Servicios__Retoque__2 {
+    display: grid;
     padding-top: 25%;
     grid-column: 2/3;
     grid-row: 1/3;
