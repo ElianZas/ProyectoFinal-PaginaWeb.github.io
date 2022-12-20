@@ -168,6 +168,7 @@
 .footer__Contacto{
     @include footer-settings(30px,center,white, 10px);
     background-color: $color-fondoform-background;
+    @include padding-top(10px);
 }
 .galeria__Contenedor{
     margin-top:60px;
@@ -282,7 +283,7 @@
 .footer__Servicios{
     @include footer-settings(30px,center,white, 10px);
     background-color: $color-fondoform-background;
-    @include padding-top(20px);
+    @include padding-top(10px);
 }
 
 .PromosTitulo{
@@ -337,7 +338,7 @@
     }
     &__Precios{
         strong{
-            @include precios-promos(block, 30px, $color-blanco)
+            @include precios-promos(block, 30px, $color-blanco);
         }
     }
     &__botonContacto{
@@ -487,12 +488,6 @@
             color:$color-redsocial-Facebook;
         }
     }
-    .footer__Index{
-        @include footer-settings(0px,center,white, 10px);
-        background-color: $color-fondoform-background;
-        @include padding-top(10px);
-        @include letterspacing(2px);
-    }
     .contacto{
         @include padding-top(20px);
         & &__contenido{
@@ -583,13 +578,6 @@
         border-radius:0px;
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
-    }
-    .footer__Contacto{
-        @include footer-settings(50px,center,white, 10px);
-        background-color: $color-fondoform-background;
-        @include padding-top(10px);
-        font-weight: bold;
-        @include letterspacing(4px);
     }
     .galeria__Contenedor{
         margin-top:5px;

@@ -787,6 +787,7 @@
   color: white;
   padding-bottom: 10px;
   background-color: rgba(16, 67, 94, 0.6117647059);
+  padding-top: 10px;
 }
 
 .galeria__Contenedor {
@@ -904,7 +905,7 @@
   color: white;
   padding-bottom: 10px;
   background-color: rgba(16, 67, 94, 0.6117647059);
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .PromosTitulo {
@@ -1129,15 +1130,6 @@
   .redes__iconos .redes__iconos__3:hover svg.Facebook {
     color: #3b5998;
   }
-  .footer__Index {
-    margin-top: 0px;
-    text-align: center;
-    color: white;
-    padding-bottom: 10px;
-    background-color: rgba(16, 67, 94, 0.6117647059);
-    padding-top: 10px;
-    letter-spacing: 2px;
-  }
   .contacto, .contacto {
     padding-top: 20px;
   }
@@ -1222,16 +1214,6 @@
     border-radius: 0px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-  }
-  .footer__Contacto {
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-    padding-bottom: 10px;
-    background-color: rgba(16, 67, 94, 0.6117647059);
-    padding-top: 10px;
-    font-weight: bold;
-    letter-spacing: 4px;
   }
   .galeria__Contenedor {
     margin-top: 5px;
