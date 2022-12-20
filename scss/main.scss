@@ -337,7 +337,7 @@
     }
     &__Precios{
         strong{
-            @include precios-promos(block, 30px, $color-resalta)
+            @include precios-promos(block, 30px, $color-blanco)
         }
     }
     &__botonContacto{
