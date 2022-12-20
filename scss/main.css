@@ -208,7 +208,7 @@
 }
 
 .card-Mobile {
-  padding-top: 35px;
+  padding-top: 28px;
   border: none;
   display: block;
   width: 100%;
@@ -842,6 +842,10 @@
   text-align: center;
   color: white;
 }
+.galeria .galeria__Servicios__Retoque {
+  display: flex;
+  flex-direction: column;
+}
 .galeria .galeria__Servicios__Retoque img {
   border-radius: 10px;
   -webkit-animation-delay: 0.8s;
@@ -853,6 +857,8 @@
 }
 .galeria .galeria__Servicios__Retoque__2 {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .galeria .galeria__Servicios__Retoque__2 img {
   border-radius: 10px;

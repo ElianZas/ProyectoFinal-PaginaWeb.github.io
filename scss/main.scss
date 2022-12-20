@@ -241,6 +241,8 @@
         }
     }
     & &__Servicios__Retoque{
+        display:flex;
+        flex-direction: column;
         img{
             border-radius: $border-radius;
             animation-delay: 0.8s;
@@ -250,6 +252,8 @@
     }
     & &__Servicios__Retoque__2{
         margin-top: 50px;
+        display:flex;
+        flex-direction: column;
         img{
             border-radius: $border-radius;
             animation-delay: 2s;
@@ -396,6 +400,7 @@
     background-color: $color-fondoform-background;
     padding-top:10px;
 }
+ 
 
 @media(min-width:$desktop){
     .bg-colorfondoIndex{
